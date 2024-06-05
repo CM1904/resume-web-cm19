@@ -209,7 +209,7 @@ const App = () => {
                       <a href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a>
                       <a href="#"><i className="fa fa-twitch" aria-hidden="true"></i></a>
                   </div> */}
-                  <a href="https://drive.google.com/file/d/1hiO_12qCT8DgnaxaGw0ZUoAjy3e4f6Qp/view?usp=sharing" className="btn"><FormattedMessage id="home4" /></a>
+                  <a href="https://drive.google.com/file/d/1QVVyZUxaZ6tggRlTXEIHcdkVzXv6-b72/view?usp=sharing" className="btn"><FormattedMessage id="home4" /></a>
                 </animated.div>
             </div>
             {/* <div>
