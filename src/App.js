@@ -10,7 +10,7 @@ const messages_es = require('./components/translations/es.json');
 const messages_en = require('./components/translations/en.json'); 
 const currentYear = new Date().getFullYear();
 const images = require.context('../public/assets/images', true);
-const imageUrl = images('./fondo2.jpeg');
+const imageUrl = images('./home3.jpeg');
 
 const App = () => {
     // Estado para almacenar el idioma
@@ -180,8 +180,14 @@ const App = () => {
 
           {/* section home   */}
 
-          <section className="home" id="home" ref={ref} style={{ backgroundImage: `url(${imageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-            {/* <section className="home" id="home" ref={ref}> */}
+          <section
+            className="home relative"
+            id="home"
+            ref={ref}
+            style={{ backgroundImage: `url(${imageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+          >
+              
+            <div className="overlay"></div>
             <div className="home-content">
                 <animated.h3 className="home-content-h3" style={isMobile ? {} : h3Animation}>
                   <FormattedMessage id="home1" />
