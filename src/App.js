@@ -180,45 +180,31 @@ const App = () => {
 
           {/* section home   */}
 
-          <section
-            className="home relative"
-            id="home"
-            ref={ref}
-            style={{ backgroundImage: `url(${imageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-          >
-              
+          <section className="home relative" id="home" ref={ref}>
+            <img src={imageUrl} alt="Background" className="background-image" />
             <div className="overlay"></div>
             <div className="home-content">
-                <animated.h3 className="home-content-h3" style={isMobile ? {} : h3Animation}>
-                  <FormattedMessage id="home1" />
-                </animated.h3>
-                <animated.h1 className="home-content-h1" style={isMobile ? {} : h1Animation}>
-                  <FormattedMessage id="home2" />
-                </animated.h1>
-                <animated.div style={isMobile ? {} : h3Animation}>
-                  <h3 className="home-content-h3">
-                <ReactTyped
-                    strings={["Front end developer","Back end developer"]}
+              <animated.h3 className="home-content-h3" style={isMobile ? {} : h3Animation}>
+                <FormattedMessage id="home1" />
+              </animated.h3>
+              <animated.h1 className="home-content-h1" style={isMobile ? {} : h1Animation}>
+                <FormattedMessage id="home2" />
+              </animated.h1>
+              <animated.div style={isMobile ? {} : h3Animation}>
+                <h3 className="home-content-h3">
+                  <ReactTyped
+                    strings={["Front-end developer","Back-end developer"]}
                     typeSpeed={70} // Velocidad de escritura en milisegundos por caracter
                     backSpeed={50} // Velocidad de borrado en milisegundos por caracter
                     loop // Repetir la animación en un bucle
                   />
-                  </h3>
-                  <p><FormattedMessage id="home3" /></p>
-                  {/* <div className="social-media">
-                      <a href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a>
-                      <a href="#"><i className="fa fa-twitch" aria-hidden="true"></i></a>
-                  </div> */}
-                  <a href="https://drive.google.com/file/d/1QVVyZUxaZ6tggRlTXEIHcdkVzXv6-b72/view?usp=sharing" className="btn"><FormattedMessage id="home4" /></a>
-                </animated.div>
+                </h3>
+                <p><FormattedMessage id="home3" /></p>
+                <a href="https://drive.google.com/file/d/1QVVyZUxaZ6tggRlTXEIHcdkVzXv6-b72/view?usp=sharing" className="btn"><FormattedMessage id="home4" /></a>
+              </animated.div>
             </div>
-            {/* <div>
-
-            </div> */}
-            {/* <div className="home-img">
-                <animated.img style={isMobile ? {} : imgAnimation} src={images(`./home.png`)} alt="home"></animated.img>
-            </div> */}
           </section>
+
 
           {/* section skills */}
 
